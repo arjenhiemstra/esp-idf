@@ -72,7 +72,7 @@ menu "SPI Flash driver"
 
     choice SPI_FLASH_DANGEROUS_WRITE
         bool  "Writing to dangerous flash regions"
-        default SPI_FLASH_DANGEROUS_WRITE_ABORTS
+        default SPI_FLASH_DANGEROUS_WRITE_ALLOWED
         help
             SPI flash APIs can optionally abort or return a failure code
             if erasing or writing addresses that fall at the beginning
